@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>descontos e benficios</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <h1>dados do funcionario</h1>
+  <form action=""onsubmit= "return false">
+    <input type="text" placeholder="nome do funcionario" id= "txtnome">
+    <input type="text"placeholder= "salario do funcionario" id= "txtsalario">
+    <input type="text"placeholder= "desconto do inss" id= "txtinss">
+    <input type="text"placeholder= "desconto de convenio"id= "txtconvenio">
+    <input type="number"placeholder= "numero de filhos" id= "txtnfilhos" min="0" max="10">
+    <input type="text"placeholder= "salario liquido"id= "txtliquido"disabled>
+    <input type="submit" value="calcular" id="btncalcular">
+</form> 
+
+<div id="dica">
+    <a href="#" id="fechar">&times;</a>
+    <p id="texto"></p>
+</div>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
