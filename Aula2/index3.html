@@ -16,10 +16,32 @@
     </form>
 
 <script>
+/*
+neste script iremos calcular um valor de desconto de 10% sobre
+o preço do produto.
+o usuario digita o valor do produto e, em javascript obtemos
+o valor digitado no campo (input) e multiplicamos o valor por0,9 (90%) 
+e assim temos o valor final de 10% de desconto.
+*/
+/*
+criamos tres variáveis para relacionar os elementos do formulario e,
+assim realizar os calculos com mais facilidade 
+o comando document, faz referencia ao meu documento html
+o comando getelementsbytagname-> diz que estamos pegando um elemento html por seu nome 
+de tag. nete exemplo foi necessario dizer qual foi a posição da tag que te deseja trabalhar.
+*/
 var valorproduto = document.getElementsByTagName("input")[0]
 var calcular = document.getElementsByTagName("input")[1]
 var resultado = document.getElementsByTagName("p")[0]
 
+/*
+calcular é a referencia ao botão calcular que esta formulario.
+quando o usuario clicar(onclick) no botão dispara uma execução
+(function) que realiza o calculo do valor do produto * 0,9, ou seja , desconto de 10%
+do valor do produto 
+o resultado e´uma referencia ao p(paragrafo) que esta no formulario e dentro delle(innerHTML)
+vamos colocar o resultado calculado.
+*/
 calcular.onclick = function(){
     resultado.innerHTML = valorproduto.value * 0.9
 }
