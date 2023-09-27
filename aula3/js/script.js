@@ -29,9 +29,9 @@ txtnfilhos.onclick = function(){
 btncalcular.onclick = function(){
     var rsinss
     var rsconvenio
-    var rsnfilho
+    var rsnfilhos
     var rsliquido
-}
+
     if(txtsalario.value <= 1320){
         rsinss = txtsalario.value* (7.5/100)
     }
@@ -56,4 +56,15 @@ btncalcular.onclick = function(){
             rsconvenio = txtsalario.value * (7.5/100)
         }
 
-        txtliquido.value = rsinss
+        if(txtnfilhos.value == 0){
+            rsnfilhos = 0
+        }
+        else{
+            rsnfilhos = txtsalario.value * (5/100) * txtnfilhos.value
+        }
+
+        rsliquido = parseFloat(txtsalario.value) + rsnfilhos - (rsinss + rsconvenio)
+        txtliquido.value = rsliquido
+        txtinss.value = rsinss
+        txtconvenio = rsconvenio
+    }
