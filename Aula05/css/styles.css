@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+form {
+  width: 250px;
+  margin: 10% auto;
+  border: 1px solid silver;
+  padding: 10px;
+}
+#display {
+  width: 100%;
+  display: block;
+  padding: 10px;
+  font-size: 20pt;
+  font-family: arial;
+  border: 1px solid silver;
+  text-align: right;
+  margin-bottom: 5px;
+}
+input {
+  width: 21.512%;
+  height: 50px;
+  margin: 2.3px;
+  font-family: "Franklin Gothic Medium";
+  font-size: 15pt;
+}
