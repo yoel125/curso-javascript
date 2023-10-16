@@ -1,0 +1,51 @@
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+header{
+    background-image: url("https://www.mundoconectado.com.br/wp-content/plugins/seox-image-magick/imagick_convert.php?width=910&height=568&format=webp&quality=91&imagick=uploads.mundoconectado.com.br/2023/10/02172436/Cena-do-filme-O-Mundo-Depois-de-Nos-912x569.jpg");
+    background-size: 100%;
+    background-position: 0px - 100px;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+}
+h1{
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 100px;
+}
+main{
+    margin: 30px 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+.divfilme{
+width: 21%;
+background-color: rgb(255,255,255);
+border-radius: 10px;
+border: solid silver;
+margin: 8px;
+box-shadow: 0px 0px 10px #999;
+}
+.imgfilme{
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15pt;
+    margin: 5px;
+}
+h4{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: lighter;
+    font-size: 12px;
+    margin: 5px;
+}
